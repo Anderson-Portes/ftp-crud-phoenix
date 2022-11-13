@@ -1,5 +1,4 @@
 defmodule FtpPhoenixWeb.Router do
-  alias FtpPhoenixWeb.ClientController
   use FtpPhoenixWeb, :router
 
   pipeline :browser do
