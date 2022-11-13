@@ -1,0 +1,43 @@
+<h1>Show Client</h1>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @client.name %>
+  </li>
+
+  <li>
+    <strong>Server url:</strong>
+    <%= @client.server_url %>
+  </li>
+
+  <li>
+    <strong>Server user:</strong>
+    <%= @client.server_user %>
+  </li>
+
+  <li>
+    <strong>Server password:</strong>
+    <%= @client.server_password %>
+  </li>
+
+  <li>
+    <strong>Register code:</strong>
+    <%= @client.register_code %>
+  </li>
+
+  <li>
+    <strong>Register password:</strong>
+    <%= @client.register_password %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @client.description %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.client_path(@conn, :edit, @client) %></span> |
+<span><%= link "Back", to: Routes.client_path(@conn, :index) %></span>
